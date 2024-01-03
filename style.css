@@ -8,7 +8,12 @@ html {
 }
 
 section {
-  height: 100vh;
+  min-height: 100vh;
+}
+
+.about {
+  min-height: auto;
+  padding: 3rem 0px;
 }
 
 main {
@@ -72,5 +77,40 @@ main {
     text-decoration: underline;
     font-style: italic;
     font-size: 6rem;
+  }
+
+  .about__container {
+    display: flex;
+    justify-content: space-evenly;
+    color: var(--text-primary);
+  }
+
+  .card {
+    flex: 1;
+    text-align: center;
+    height: 100%;
+  }
+
+  .card img {
+    max-width: 80%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+    border: 2px solid var(--text-primary);
+    box-sizing: border-box;
+    margin-bottom: 3rem;
+    min-height: 350px;
+  }
+
+  .card__title {
+    font-family: "HarlowSolid";
+    font-size: 4rem;
+    margin-bottom: 2rem;
+    font-weight: 100;
+  }
+
+  .card__text {
+    font-family: "MotterCorpus";
+    font-size: 1.5rem;
   }
 }
