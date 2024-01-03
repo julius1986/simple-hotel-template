@@ -1,0 +1,18 @@
+@font-face {
+  font-family: "BauhausMedium";
+  src: local("BauhausMedium"),
+    url("./ITC\ Bauhaus\ Medium/ITC Bauhaus Medium.otf") format("opentype");
+}
+
+@font-face {
+  font-family: "MotterCorpus";
+  src: local("BauhausMedium"),
+    url("./Motter\ Corpus\ ITC\ Regular/Motter Corpus ITC Regular.otf")
+      format("opentype");
+}
+
+@font-face {
+  font-family: "HarlowSolid";
+  src: local("BauhausMedium"),
+    url("./Harlow\ Solid\ Regular/Harlow Solid Regular.ttf") format("opentype");
+}

@@ -1,0 +1,76 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-size: 20px;
+}
+
+section {
+  height: 100vh;
+}
+
+main {
+  background-color: var(--bg-primary);
+}
+
+.main {
+  display: flex;
+  justify-content: center;
+  align-items: start;
+  background-image: url("./images/odessa.jpg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  padding: 0 5%;
+}
+
+.main__main-text {
+  margin-top: 6rem;
+  color: var(--text-primary);
+  border: 0.3rem solid var(--text-primary);
+  border-radius: 0.95rem;
+  padding: 1.2rem 3rem;
+  font-size: 3rem;
+  font-weight: bold;
+  font-family: "BauhausMedium";
+}
+
+.main__text {
+  margin-bottom: 1.2rem;
+}
+
+@media screen and (min-width: 576px) {
+  html {
+    font-size: 1.3vw;
+  }
+
+  .main {
+    display: block;
+  }
+
+  .main__main-text {
+    position: absolute;
+    color: var(--text-primary);
+    left: 7rem;
+    bottom: 7rem;
+    border: 0.3rem solid var(--text-primary);
+    border-radius: 0.95rem;
+    padding: 1.2rem 3rem;
+  }
+
+  .main__text:last-child {
+    margin-bottom: 0px;
+  }
+  .text1,
+  .text2 {
+    font-size: 5.6rem;
+  }
+
+  .text2 {
+    text-decoration: underline;
+    font-style: italic;
+    font-size: 6rem;
+  }
+}
