@@ -14,6 +14,7 @@ section {
 .about {
   min-height: auto;
   padding: 3rem 0px;
+  color: var(--text-primary);
 }
 
 main {
@@ -50,6 +51,25 @@ main {
   flex: 1;
   text-align: center;
   height: 100%;
+  margin-bottom: 6rem;
+}
+
+.card__image {
+  position: relative;
+  margin: 0 auto;
+  width: 80%;
+  padding-bottom: 56%;
+  margin-bottom: 1rem;
+}
+
+.card img {
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  position: absolute;
+  object-fit: cover;
+  object-position: center;
 }
 
 .card__title {
@@ -63,26 +83,6 @@ main {
   font-family: "MotterCorpus";
   font-size: 1.5rem;
 }
-
-
-.card__image{
-  position: relative;
-  margin: 0 auto;
-  width: 100%;
-  padding-bottom: 56%;
-  margin-bottom: 3rem;
-}
-
-.card img {
-  width: 100%;
-  height: 100%;
-  top: 0;
-  left: 0;
-  position: absolute;
-  object-fit: cover;
-  object-position: center;
-}
-
 
 @media screen and (min-width: 576px) {
   html {
@@ -120,7 +120,22 @@ main {
   .about__container {
     display: flex;
     justify-content: space-evenly;
-    color: var(--text-primary);
     gap: 3rem;
+    flex-wrap: wrap;
+  }
+
+  .card {
+    margin-bottom: 0;
+    flex: calc(33% - 3rem);
+    margin-bottom: 0;
+  }
+
+  .card__image {
+    margin-bottom: 3rem;
+    width: 100%;
+  }
+
+  .card__title {
+    margin-bottom: 2rem;
   }
 }
