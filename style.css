@@ -4,7 +4,7 @@
 }
 
 html {
-  font-size: 20px;
+  font-size: 30px;
 }
 
 section {
@@ -50,13 +50,17 @@ main {
   color: var(--text-primary);
   border: 0.3rem solid var(--text-primary);
   border-radius: 0.95rem;
-  padding: 1.2rem 3rem;
-  font-size: 3rem;
+  padding: 20px 0px;
+  font-size: 40px;
   font-weight: bold;
   font-family: "BauhausMedium";
+  width: 80%;
+  box-sizing: border-box;
+  margin: auto;
+  text-align: center;
 }
 
-.main__text {
+.text1 {
   margin-bottom: 1.2rem;
 }
 
@@ -87,22 +91,22 @@ main {
 
 .card__title {
   font-family: "HarlowSolid";
-  font-size: 4rem;
+  font-size: 50px;
   margin-bottom: 2rem;
   font-weight: 100;
 }
 
 .card__text {
   font-family: "MotterCorpus";
-  font-size: 1.5rem;
+  font-size: 20px;
 }
 
 .info-header {
   color: var(--text-primary);
   border: 0.3rem solid var(--text-primary);
   border-radius: 0.95rem;
-  padding: 1.2rem 3rem;
-  font-size: 3rem;
+  padding: 20px 0px;
+  font-size: 40px;
   font-weight: bold;
   font-family: "BauhausMedium";
   width: 80%;
@@ -113,13 +117,13 @@ main {
 
 .contacts-data {
   color: var(--text-primary);
-  font-size: max(1.5rem, 26px);
+  font-size: 26px;
 }
 
 .contacts-data ul {
   box-sizing: border-box;
   list-style: none;
-  padding-left: 3rem;
+  padding-left: 10%;
 }
 
 .contacts-data ul > li {
@@ -155,6 +159,9 @@ a:hover {
     border: 0.3rem solid var(--text-primary);
     border-radius: 0.95rem;
     padding: 1.2rem 3rem;
+    width: auto;
+    box-sizing: border-box;
+    text-align: start;
   }
 
   .main__text:last-child {
@@ -191,13 +198,24 @@ a:hover {
 
   .card__title {
     margin-bottom: 2rem;
+  font-size: 4rem;
+  }
+
+  .card__text {
+    font-size: 1.5rem;
   }
 
   .info-header {
+  padding: 1.2rem 3rem;
     width: 60%;
+    font-size: 4rem;
   }
 
   .contacts-data {
     font-size: max(1.5rem, 36px);
+  }
+
+  .contacts-data ul {
+    padding-left: 3rem;
   }
 }
